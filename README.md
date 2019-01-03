@@ -1,3 +1,3 @@
 # Class
-Repo for full class files
+Repo for students' files
 for PSY31170 Python Programming for Psychology
