@@ -1,0 +1,96 @@
+#PersonclassCleaned.py
+
+class Person:
+    def __init__(self,name=' ',address =' ',phone=' ',email=' '):
+        self.name = name
+        self.address = address
+        self.phone = phone
+        self.email = email
+        self.fields = ["name","address","phone","email"]
+
+    def hello(self):
+        print('Hi there! My name is ',self.name)
+
+    def adddata(self):
+        input001 = input("Name?")
+        input002 = input("Address?")
+        input003 = input("Phone?")
+        input004 = input("email?")
+        self.name = input001
+        self.address = input002
+        self.phone = input003
+        self.email = input004
+        
+    
+
+def addperson(peopledict):
+    newperson = Person()
+    n = "x"
+    print(newperson)
+    while n not in 'Qq':
+        n = input("Would you like to add a person to the dictionary? Y/N Q v to quit")        
+        if n in "Yy":
+            PeopleKey = input("Enter the registrant's name.")
+            peopledict[PeopleKey] = newperson
+            for x in newperson.fields:
+                data = input("Please enter the new person's "+x)                
+                newperson.x = data
+                print(newperson.x)
+    return newperson
+
+
+      
+#Peopledict
+peopledict = {}
+newperson = Person()
+
+
+start = input("What would you like to do? \n 1 - Add a person to the dictionary \n 2 - Update info for an existing person \n 3 - Return to start \n 4 - Quit \n")
+if start == "1":
+    newperson = addperson(peopledict)
+    peopledict[newperson.name] = newperson
+    print(newperson.address)
+    print(peopledict)
+else:
+    if start == "2":
+        print("Code for Updating is forthcoming.")
+    else:
+        if start == "3":
+            start
+        else:
+            if start == "4":
+                exit()
+
+            
+            
+
+
+
+
+##input1 = input("Would you like to add a person to the dictionary? Y/N Q v to quit")
+##input2 = input("Would you like to add ANOTHER person to the dictionary? Y/N v Q to quit")
+
+
+##x1 = True
+##while x1 == True:
+##    if input1 in "Yy"
+##    
+##    if var1 in "YyNn":
+##        if var1 in "Yy":
+##            var2 = input("Please enter the DICTIONARY NAME for this person.")
+##            var3 = input("Thanks! Please enter the LITERAL NAME of the person.")
+##            peopledict[var2] = var3
+##        else:
+##            if var1 in "Nn":
+##                print("Ok. Then why are you here? Go away!")
+##                x1 = False
+##                
+            
+        
+            
+
+
+##input("Please tell me a name to add to the dictionary.")
+
+
+##print(str(peoplelist[0,-1]))
